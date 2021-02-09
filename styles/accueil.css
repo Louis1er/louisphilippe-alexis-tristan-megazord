@@ -1,6 +1,10 @@
 body{
-    background-color: red;
-    color: var(--primary);
+    background-color: var(--bg);
+    color: var(--text);
     font-family: var(--font1);
+    
 }
 
+p {
+    font-family: var(--font2);
+}
