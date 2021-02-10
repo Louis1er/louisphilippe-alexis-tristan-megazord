@@ -3,6 +3,14 @@ body{
     color: var(--text);
     font-family: var(--font1);    
 }
+@media screen and (orientation: landscape) {
+    .header-accueil{
+        position: relative;
+        margin: 0 auto;
+        width:100%;
+        height: 56.25vw;
+    }
+} 
 .header-accueil{
     position: relative;
     width:100%;
@@ -17,9 +25,9 @@ body{
 }
 .container{
     position: relative;
-    height:100%;    
+    height:100%;
+    text-align: center;    
 }
-
 .row{
     position: relative;
     height:100%;   
