@@ -23,7 +23,7 @@ body{
     background-color: var(--bg);
     opacity:40%;
 }
-.container{
+.container-accueil{
     position: relative;
     height:100%;
     text-align: center;    
