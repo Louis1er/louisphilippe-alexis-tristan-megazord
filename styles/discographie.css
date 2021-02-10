@@ -11,11 +11,11 @@
 }
 
 
-@media screen and (orientation: portrait) {
-    .picture-disco{
+@media screen and (orientation: landscape) {
+    .header-disco{
         position: relative;
         width:100%;
-        width: 56.25%;
+        height: 56.25vw;
         margin: 0 auto;
     }
 }    
