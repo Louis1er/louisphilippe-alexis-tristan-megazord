@@ -60,7 +60,7 @@
 }
 
 
-h1{
+.h1{
     font-size:15vh;
 }
 
@@ -90,3 +90,4 @@ button{
  .dark{
      display: none;
  }
+
