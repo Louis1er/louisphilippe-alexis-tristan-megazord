@@ -48,8 +48,6 @@ body{
 p {
     font-family: var(--font2);
 }
-
-
 .card-index{
     margin-top:10px;
     overflow: hidden;
