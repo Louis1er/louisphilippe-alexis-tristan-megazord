@@ -50,12 +50,11 @@ p {
 }
 
 
-.card{
+.card-index{
     margin-top:10px;
     overflow: hidden;
 }
 .card-body{
-    color:black;
     font-family: var(--font1);
     font-size: 5vh;
 }
