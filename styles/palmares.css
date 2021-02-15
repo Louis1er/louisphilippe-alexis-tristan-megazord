@@ -91,3 +91,23 @@ button{
      display: none;
  }
 
+ .card-title{
+     background-color: black;
+     font-size: 12vh;
+ }
+ .card{
+margin: 0;
+ }
+
+ .chop-img{
+     width: 100%;
+     transform: scale(1);
+     transition-duration: 0.3s;
+ }
+
+ .card:hover .chop-img {
+transform: scale(1.02);
+cursor: pointer;
+
+ }
+
