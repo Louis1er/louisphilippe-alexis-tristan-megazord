@@ -59,11 +59,12 @@
 
 
 h1{
-    font-size:15vh;
+    font-size:15vw;
+    
 }
 
-p{
-    font-size:3vh;
+.p-disco{
+    font-size:4vh;
 }
 
 button{
@@ -72,24 +73,84 @@ button{
     background-color: var(--primary-alt);
     font-family: var(--font2);
     color: white;
-    margin-bottom: 50px;
+    
+    
 }
+
+.button{
+    
+    font-size:2.5vh;
+    background-color: var(--primary-alt);
+    font-family: var(--font2);
+    color: white;
+    margin-left:6.5%;
+    
+}
+
 
 section{
     margin: 20px 0;
     
+    
 }
 
 ol{
-    font-size:2.5vh;
-    margin-left:2%;
+    font-size:5vh;
+    margin-left:4%;
+    
 }
 
 li{
     font-family: var(--font2);
+    font-size:2.5vh;
+    margin-left:4%;
+    
 }
 
 .picture-split{
     margin-top: 20px;
     width: 100%;
 }
+
+a { 
+    color: inherit; 
+}
+
+@media (min-width: 576px) {
+    section{
+        margin: 40px 0;
+        
+    }
+}    
+
+@media (min-width: 576px) {
+    .picture-split{
+        margin-top: 0px;
+        
+    }
+}    
+
+@media (min-width: 1200px) {
+    li{
+        font-size:4vh;
+        margin-left:8%;
+        
+    }
+}    
+
+@media (min-width: 1200px) {
+    ol{
+        font-size:8vh;
+        margin-left:8%;
+        
+    }
+}    
+
+@media (min-width: 1200px) {
+    .button{
+        font-size:4vh;
+        margin-left:12%;
+        
+    }
+}    
+
