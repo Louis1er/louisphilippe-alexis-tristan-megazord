@@ -75,6 +75,21 @@ button{
     margin-bottom: 50px;
 }
 
-section{margin: 20px 0;
+section{
+    margin: 20px 0;
+    
+}
 
+ol{
+    font-size:2.5vh;
+    margin-left:2%;
+}
+
+li{
+    font-family: var(--font2);
+}
+
+.picture-split{
+    margin-top: 20px;
+    width: 100%;
 }
