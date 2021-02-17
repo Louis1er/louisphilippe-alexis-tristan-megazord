@@ -26,6 +26,7 @@
     object-fit: contain;
     width: 100%;
     height:100%;
+    margin-top: 20px;
 }
 
 .disco-container{
@@ -108,7 +109,7 @@ li{
 }
 
 .picture-split{
-    margin-top: 20px;
+    
     width: 100%;
 }
 
@@ -124,7 +125,7 @@ a {
 }    
 
 @media (min-width: 576px) {
-    .picture-split{
+    .album1{
         margin-top: 0px;
         
     }
@@ -149,7 +150,7 @@ a {
 @media (min-width: 1200px) {
     .button{
         font-size:4vh;
-        margin-left:12%;
+        margin-left:11%;
         
     }
 }    
