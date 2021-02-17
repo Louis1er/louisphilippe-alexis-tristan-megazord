@@ -92,6 +92,7 @@ button{
  }
 .palma .card{
     color: black;
+    margin: 10px;
 }
 
 
@@ -109,4 +110,14 @@ button{
 
 .palma h2{
     font-size: 10vh;
+}
+
+.palma .img-fluid{
+    
+    transition-duration: 0.3s;
+    transform: scale(1);
+}
+
+.palma .card:hover .img-fluid{
+    transform: scale(1.02);
 }
