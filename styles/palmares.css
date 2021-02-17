@@ -32,7 +32,7 @@
     position: relative;
     height:100%;
     margin-right: 20px;
-    text-align: right;
+    
     
     
 }
@@ -90,9 +90,8 @@ button{
  .dark{
      display: none;
  }
- .card-title{
-    background-color: black;
-    font-size: 12vh;
+.palma .card{
+    color: black;
 }
 
 
@@ -101,7 +100,7 @@ button{
     font-size: 5vh;  
 }
 
-li{
+.palma li{
     font-family: var(--font2);
     font-size:2.5vh;
     margin-left:4%;
