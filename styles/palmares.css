@@ -32,7 +32,7 @@
     position: relative;
     height:100%;
     margin-right: 20px;
-    text-align: right;
+    
     
     
 }
@@ -90,9 +90,9 @@ button{
  .dark{
      display: none;
  }
- .card-title{
-    background-color: black;
-    font-size: 12vh;
+.palma .card{
+    color: black;
+    margin: 10px;
 }
 
 
@@ -101,9 +101,23 @@ button{
     font-size: 5vh;  
 }
 
-li{
+.palma li{
     font-family: var(--font2);
-    font-size:2.5vh;
+    font-size: 4vh;
     margin-left:4%;
     
+}
+
+.palma h2{
+    font-size: 10vh;
+}
+
+.palma .img-fluid{
+    
+    transition-duration: 0.3s;
+    transform: scale(1);
+}
+
+.palma .card:hover .img-fluid{
+    transform: scale(1.02);
 }
