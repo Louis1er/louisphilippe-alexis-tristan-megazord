@@ -5,7 +5,42 @@
 @import url("discographie.css");
 @import url("palmares.css");
 
+footer{
+    
+    background-color: var(--primary);
+    margin-top: 20px;
+    padding:20px;
+    
+}
 
+@media (max-width: 992px) {
+    footer{
+        text-align: center;
+        
+    }
+}    
+
+.footer-container{
+    position: relative;
+    height:100%;
+}
+
+.footer-row{
+    position: relative;
+    height:100%;
+}
+
+.a-footer { 
+    color: inherit; 
+    font-family: var(--font2);
+    text-decoration: none;
+    font-size:2.2vh;
+}
+
+.p-footer { 
+    font-family: var(--font2);
+    font-size:2.2vh;
+}
 
 
 

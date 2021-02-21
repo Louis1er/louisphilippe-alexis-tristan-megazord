@@ -115,6 +115,8 @@ li{
 
 a { 
     color: inherit; 
+    font-family: var(--font2);
+    text-decoration: none;
 }
 
 @media (min-width: 576px) {
