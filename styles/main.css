@@ -23,23 +23,29 @@ footer{
 .footer-container{
     position: relative;
     height:100%;
+    width:100%;
 }
 
 .footer-row{
     position: relative;
     height:100%;
+    width:100%;
+    
 }
+
 
 .a-footer { 
     color: inherit; 
     font-family: var(--font2);
     text-decoration: none;
     font-size:2.2vh;
+    width:100%;
 }
 
 .p-footer { 
     font-family: var(--font2);
     font-size:2.2vh;
+    width:100%;
 }
 
 
