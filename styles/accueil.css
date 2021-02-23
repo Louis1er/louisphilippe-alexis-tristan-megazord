@@ -56,3 +56,11 @@ p {
     font-family: var(--font1);
     font-size: 5vh;
 }
+
+.h1-index{
+    font-size: 10vw;
+}
+
+.h1-membres{
+    font-size: 7vw;
+}

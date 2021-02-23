@@ -10,6 +10,7 @@
 </head>
 
 <body class="disco">
+
     <header class="header-disco">
         <picture class="picture-disco">
             <source class="album1" srcset="img/album2.jpg" media="(min-width: 1000px)">
@@ -21,11 +22,11 @@
         <div class="disco-container">
             <div class="row"> 
                 <div class="col-sm-8 align-self-end">
-                    <h1>Discographie</h1>
+                    <h1 class="h1-disco">Discographie</h1>
 
                     <p class="p-disco">System of a Down a enregistré 5 albums studio répartis entre 1998 et 2005.</p>
 
-                    <button>En savoir plus</button>
+                    <a href="#main"><button>En savoir plus</button></a>
                     
                 
                     
@@ -34,7 +35,7 @@
         </div>
     </header>
     <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
-        <div class="container">
+        <div class="container-fluid">
             <a class="navbar-brand" href="index.html">SOAD</a>
            
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
@@ -61,7 +62,13 @@
 
     </nav>
 
+<main id="main" class="container-fluid">
+    <div class="row">
+        
+
+        <div class="col-md-9">   
     <section class="section-li">
+        
         <div class= "row"> 
             <div class="col-xs-12 col-sm-5 order-sm-1 order-xs-1">
             <ol>System of a Down
@@ -211,9 +218,16 @@
                 </picture>
             </div>
             </div>
+            
+        
     </section>
+</div>
+    <div class="col-md-3">
+        <img class="anim" src="img/anim_soon.png">
+</div>
 
-
+</div>
+</main>
 
     <footer>
         <div class="container-fluid">

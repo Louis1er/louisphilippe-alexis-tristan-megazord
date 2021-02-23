@@ -52,6 +52,7 @@ footer{
 .navbar-brand{
     font-family: var(--font1);
     font-size:3.2vw;
+    padding-left:75px;
 }
 
 .nav-link{
@@ -69,17 +70,10 @@ nav{
     .navbar-brand{
         background-color: rgb(56, 2, 2);
         font-size:5vw;
-        
+        padding-left:0px;
     }
 } 
 
-@media (max-width: 768px) {
-    .nav-brand{
-        background-color: rgb(56, 2, 2);
-        font-size:5vw;
-        
-    }
-} 
 
 @media (max-width: 576px) {
     .nav-link{
@@ -93,6 +87,19 @@ nav{
     .nav-link{
       
         font-size:2.3vw;
+        
+    }
+} 
+
+.anim{
+    width:400px;
+    height: 400px;
+}
+
+@media (max-width: 768px) {
+    .anim{
+      
+        display:none;
         
     }
 } 
