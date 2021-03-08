@@ -67,24 +67,24 @@ p {
 .h1-membres{
     font-size: 7vw;
 }
-.swiper-container{
+.index .swiper-container{
     width:60%;
 }
-.swiper-slide{
+.index .swiper-slide{
     position:relative;
     width: 100%;
     height: 0;
     padding-bottom: 56.25%; 
 }
-.swiper-slide img{
+.index .swiper-slide img{
     width: 100%;
     object-fit: cover;
 }
-.swiper-pagination-bullet-active {
+.index .swiper-pagination-bullet-active {
     background-color: #c50a0a !important;
     opacity: 1;
 }
-.swiper-pagination-bullet{
+.index .swiper-pagination-bullet{
     background-color: #CFBC8A;
     opacity:1;
 }
