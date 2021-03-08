@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discographie</title>
 </head>
@@ -12,10 +13,16 @@
 <body class="disco">
 
     <header class="header-disco">
-        <picture class="picture-disco">
-            <source class="album1" srcset="img/album2.jpg" media="(min-width: 1000px)">
-            <img class="album1" src="img/album1.jpg">
-        </picture>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/split_album1.jpg"></div>
+              <div class="swiper-slide"><img src="img/split_album2.jpg"> </div>
+              <div class="swiper-slide"><img src="img/split_album3.jpg"></div>
+            <div class="swiper-slide"><img src="img/split_album4.jpg"></div>
+            <div class="swiper-slide"><img src="img/split_album5.jpg"></div>
+            
+          </div>
+          </div>
         
         <div class="opacité"></div>
 
@@ -303,9 +310,9 @@
 
 
 
-
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous" src="scripts/main.js" ></script>
-    <script> src="scripts/discographie.js" </script>
+    <script src="scripts/discographie.js" ></script>
 </body>
 </html>
 
