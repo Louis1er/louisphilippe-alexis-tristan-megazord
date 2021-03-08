@@ -67,6 +67,9 @@ p {
 .h1-membres{
     font-size: 7vw;
 }
+.swiper-container{
+    width:60%;
+}
 .swiper-slide{
     position:relative;
     width: 100%;
