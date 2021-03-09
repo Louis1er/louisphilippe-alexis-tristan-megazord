@@ -121,3 +121,26 @@ p{
 .palma .card:hover .img-fluid{
     transform: scale(1.02);
 }
+.palma .swiper-container{
+   
+ height: 300px;
+}
+.palma .swiper-slide{
+    position:relative;
+   width: 100%;
+    height: 300px;
+    padding-bottom: 56.25%; 
+}
+.palma .swiper-slide img{
+    width: 100%;
+    object-fit: cover;
+}
+.swiper-button-next{
+    color: #c50a0a !important;
+    opacity: 1;
+}
+
+.swiper-button-prev{
+    color: #c50a0a !important;
+    opacity: 1;
+}
