@@ -1,7 +1,7 @@
 var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 2,
+    slidesPerView: 1,
     spaceBetween: 30,
-    slidesPerGroup: 2,
+    slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -12,4 +12,9 @@ var swiper = new Swiper('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    breakpoints: {
+      992: {
+        slidesPerView: 2,
+      }
+    }
   });
