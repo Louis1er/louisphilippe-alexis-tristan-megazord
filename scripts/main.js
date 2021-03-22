@@ -13,7 +13,7 @@ const sectionList = document.querySelectorAll(".section-li");
     scrollTrigger:  {
       trigger: banner, 
       markers: true,
-      toggleActions: 'play reset play reset',
+      toggleActions: 'play complete reverse reset',
      
     }
    
