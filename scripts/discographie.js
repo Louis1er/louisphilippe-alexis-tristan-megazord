@@ -20,9 +20,6 @@ const sectionList = document.querySelectorAll(".section-li");
   gsap.timeline({
     scrollTrigger:  {
       trigger: banner, 
-      scrub: true,
-      start: 'top 75%',
-      end: 'bottom 25%',
       markers: true,
       toggleActions: 'play complete reverse reset',
      
