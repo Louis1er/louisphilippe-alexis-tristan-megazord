@@ -14,6 +14,10 @@ const sectionList = document.querySelectorAll(".section-li");
   sectionList.forEach((banner) => { 
   const animation= banner.querySelector(".anim_scroll");
   const animation_left= banner.querySelector(".anim_scroll_left");
+  const titre= banner.querySelector(".ol");
+  const video= banner.querySelector(".video");
+  const titrevideo= banner.querySelector(".titre-video");
+  const button= banner.querySelector(".button");
   
   
 
@@ -26,23 +30,43 @@ const sectionList = document.querySelectorAll(".section-li");
     }
    
   })
+  .from(titre, {
+      x: '-100%',
+      duration: 1, 
+      opacity: 0,
+    })
 
+    .from(button, {
+      duration: 0.5, 
+      opacity: 0,
+    })
+
+    .from(titrevideo, {
+      x: '-100%',
+      duration: 1, 
+      opacity: 0,
+    })
 
   .from(animation, {
-    x: '200%',
-    duration: 2, 
+    x: '100%',
+    duration: 0.8, 
     opacity: 0,
   })
 
+  .from(video, {
+      x: '-100%',
+      duration: 1, 
+      opacity: 0,
+    })
+
   .from(animation_left, {
-    x: '-110%',
-    duration: 2, 
+    x: '-50%',
+    duration: 0.5, 
     opacity: 0,
   }, '<' );
 
- 
-  
-
 })
+
+
 
 GSDevTools.create();
