@@ -30,12 +30,14 @@ const sectionList = document.querySelectorAll(".section-li");
 
   .from(animation, {
     x: '200%',
-    duration: 3, 
+    duration: 2, 
+    opacity: 0,
   })
 
   .from(animation_left, {
     x: '-110%',
-    duration: 3, 
+    duration: 2, 
+    opacity: 0,
   }, '<' );
 
  
