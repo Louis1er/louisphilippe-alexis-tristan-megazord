@@ -4,32 +4,33 @@ gsap.registerPlugin(ScrollTrigger);
 
 const sectionList = document.querySelectorAll(".section-li");
   sectionList.forEach((banner) => { 
-  const image1= banner.querySelector(".album1");
-  const image2= banner.querySelector(".album2");
+  const animation= banner.querySelector(".anim_scroll");
+  const animation_left= banner.querySelector(".anim_scroll_left");
   
   
 
   gsap.timeline({
     scrollTrigger:  {
-      trigger: image1, 
-      trigger: image2, 
+      trigger: banner, 
       markers: true,
-      toggleActions: "play play none none"
+      toggleActions: 'play restart play restart',
+     
     }
    
   })
 
 
-  .from(image1, {
+  .from(animation, {
     x: '200%',
     duration: 3, 
   })
 
-  .from(image2,{
+  .from(animation_left, {
     x: '-100%',
-    duration: 2,
-  })
+    duration: 3, 
+  }, '<' );
 
+ 
   
 
 })
