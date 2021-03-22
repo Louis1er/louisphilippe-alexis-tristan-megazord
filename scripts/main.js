@@ -6,7 +6,8 @@ const sectionList = document.querySelectorAll(".section-li");
   sectionList.forEach((banner) => { 
   const image1= banner.querySelector(".album1");
   const image2= banner.querySelector(".album2");
-  const title = banner.querySelector(".title");
+  
+  
 
   gsap.timeline({
     scrollTrigger:  {
@@ -21,7 +22,7 @@ const sectionList = document.querySelectorAll(".section-li");
 
   .from(image1, {
     x: '200%',
-    duration: 3,
+    duration: 3, 
   })
 
   .from(image2,{
@@ -30,11 +31,5 @@ const sectionList = document.querySelectorAll(".section-li");
   })
 
   
-  
 
-
-  .from(title, {
-    opacity: 0,
-    x: '100px',
-  })
 })
