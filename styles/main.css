@@ -93,8 +93,10 @@ nav{
 } 
 
 .anim{
+    position: relative;
     width:400px;
     height: 400px;
+    left:25%;
 }
 
 @media (max-width: 768px) {
