@@ -68,7 +68,7 @@ p {
     font-size: 7vw;
 }
 .index .swiper-container{
-    width:60%;
+    width:100%;
 }
 .index .swiper-slide{
     position:relative;
