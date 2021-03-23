@@ -15,7 +15,6 @@ const swiper = new Swiper('.swiper-container', {
     gsap.timeline({
       scrollTrigger:  {
         trigger: banner, 
-        markers: true,
         toggleActions: 'play complete reverse reset',
        
       }
