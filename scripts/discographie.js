@@ -24,7 +24,6 @@ const sectionList = document.querySelectorAll(".section-li");
   gsap.timeline({
     scrollTrigger:  {
       trigger: banner, 
-      markers: true,
       toggleActions: 'play complete reverse reset',
      
     }
@@ -32,7 +31,7 @@ const sectionList = document.querySelectorAll(".section-li");
   })
   .from(titre, {
       x: '-100%',
-      duration: 1, 
+      duration: 0.5, 
       opacity: 0,
     })
 
