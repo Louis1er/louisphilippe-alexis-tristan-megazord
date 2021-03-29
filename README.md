@@ -8,6 +8,7 @@ Développeur vert: Tristan Girard-Montpetit
 
 
 Animations Sprite-Sheets
+
 Alexis Lacasse:
 - https://codepen.io/alexis-lacasse/pen/jOyMmyg
 - https://codepen.io/alexis-lacasse/pen/gOgwWzZ
