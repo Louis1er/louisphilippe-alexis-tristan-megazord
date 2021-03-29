@@ -22,8 +22,35 @@ const swiper = new Swiper('.swiper-container', {
     })
     .from(animation, {
       x: '200%',
-      duration: 3, 
+      duration: 2, 
     }, '<');
    
   });
+
+let timeout;
+let body = document.body;
+
+gsap.to('.section_index', {
+  scrollTrigger: {
+    markers: true,
+    trigger: '.section_index',
+    onUpdate: (e) => {
+      body.classList.add('scrollup');
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        body.classList.remove('scrollup');
+        body.classList.remove('scrolldown');
+      }, 100)
+      
+      if(e.direction == 1) {
+        body.classList.add('scrolldown');
+        body.classList.remove('scrollup');
+      } 
+      if(e.direction == -1) {
+        body.classList.add('scrollup');
+        body.classList.remove('scrolldown');
+      }
+    }
+  }
+})
   
