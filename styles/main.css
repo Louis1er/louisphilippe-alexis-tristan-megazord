@@ -94,9 +94,9 @@ nav{
 
 .anim{
     position: relative;
-    width:400px;
-    height: 400px;
-    left:25%;
+    width: 100%;
+    height: auto;
+    left:0;
 }
 
 @media (max-width: 768px) {
