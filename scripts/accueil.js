@@ -41,7 +41,7 @@ gsap.to('.bomb', {
       timeout = setTimeout(() => {
         body.classList.remove('scrollup');
         body.classList.remove('scrolldown');
-      }, 100)
+      }, 0)
       
       if(e.direction == 1) {
         body.classList.add('scrolldown');
