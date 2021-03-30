@@ -9,16 +9,13 @@ const swiper = new Swiper('.swiper-container', {
   const sectionIndex = document.querySelectorAll(".section_index");
     sectionIndex.forEach((banner) => { 
     const animation= banner.querySelectorAll(".anim_scroll");
-    
-    
   
     gsap.timeline({
       scrollTrigger:  {
         trigger: banner, 
         toggleActions: 'play complete reverse reset',
        
-      }
-     
+      }  
     })
     .from(animation, {
       x: '200%',
@@ -30,10 +27,14 @@ const swiper = new Swiper('.swiper-container', {
 let timeout;
 let body = document.body;
 
-gsap.to('.section_index', {
+gsap.to('.bomb', {
   scrollTrigger: {
-    markers: true,
-    trigger: '.section_index',
+    start: 'top 50%' ,
+    end: 'bottom 50%' ,
+    scrub: true,
+    trigger: '.bomb',
+    pin: true,
+
     onUpdate: (e) => {
       body.classList.add('scrollup');
       clearTimeout(timeout);
