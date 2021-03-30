@@ -31,7 +31,7 @@ sectionNom.forEach((banner) => {
   gsap.timeline({
     scrollTrigger: {
       trigger: banner,
-      markers: true,
+      
       toggleActions: 'play complete reverse reset',
     }
   })
@@ -57,7 +57,7 @@ sectionList.forEach((banner) => {
   gsap.timeline({
     scrollTrigger: {
       trigger: banner,
-      markers: true,
+      
       toggleActions: 'play complete reverse reset',
     }
   })
@@ -66,5 +66,37 @@ sectionList.forEach((banner) => {
       duration: 2,
       opacity: 0,
     }, '<' );
+});
+
+let timeout;
+let body = document.body;
+
+gsap.to('.avion', {
+  scrollTrigger: {
+    start: 'top 50%' ,
+    end: 'bottom 50%' ,
+    scrub: true,
+    trigger: '.avion',
+    pin: true,
+
+    onUpdate: (e) => {
+      body.classList.add('scrollup');
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        body.classList.remove('scrollup');
+        body.classList.remove('scrolldown');
+      }, 0)
+      
+      if(e.direction == 1) {
+        body.classList.add('scrolldown');
+        body.classList.remove('scrollup');
+      } 
+      if(e.direction == -1) {
+        body.classList.add('scrollup');
+        body.classList.remove('scrolldown');
+      }
+    }
+  }
 })
+  
 

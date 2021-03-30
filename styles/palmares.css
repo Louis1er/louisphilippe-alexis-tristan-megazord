@@ -144,3 +144,24 @@ p{
     color: #c50a0a !important;
     opacity: 1;
 }
+.palma .anim{
+    position: sticky;
+    top: 50%;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-image: url('https://i.imgur.com/FE8apPH.png');
+    background-size: cover;
+    animation: idle 1s steps(23) infinite;
+  }
+  .palma.scrollup .anim{
+      background-image: url('https://i.imgur.com/zxN77qp.png');
+      transform: rotate(270deg);
+  }
+  .palma.scrolldown .anim{
+      background-image: url('https://i.imgur.com/yActAnb.png');
+  }
+  @keyframes idle{
+      0%{background-position: 0 0;}
+      100%{background-position: 0 100%;}
+    }
