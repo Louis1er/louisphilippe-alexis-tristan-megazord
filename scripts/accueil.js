@@ -23,7 +23,7 @@ const swiper = new Swiper('.swiper-container', {
     }, '<');
    
   });
-
+ 
 let timeout;
 let body = document.body;
 

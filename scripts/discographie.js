@@ -68,4 +68,36 @@ const sectionList = document.querySelectorAll(".section-li");
 
 
 
-GSDevTools.create();
+
+
+
+let timeout;
+let body = document.body;
+
+gsap.to('.baril', {
+  scrollTrigger: {
+    start: 'top 50%' ,
+    end: 'bottom 50%' ,
+    scrub: true,
+    trigger: '.baril',
+    pin: true,
+
+    onUpdate: (e) => {
+      body.classList.add('scrollup');
+      clearTimeout(timeout);
+      timeout = setTimeout(() => {
+        body.classList.remove('scrollup');
+        body.classList.remove('scrolldown');
+      }, 0)
+      
+      if(e.direction == 1) {
+        body.classList.add('scrolldown');
+        body.classList.remove('scrollup');
+      } 
+      if(e.direction == -1) {
+        body.classList.add('scrollup');
+        body.classList.remove('scrolldown');
+      }
+    }
+  }
+})
