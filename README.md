@@ -18,3 +18,8 @@ Louis-Philippe Gravel
 - https://codepen.io/Louis1st/pen/xxgRRrE
 - https://codepen.io/Louis1st/pen/wvgoopR
 - https://codepen.io/Louis1st/pen/QWdGGQR
+
+Tristan Girard-Montpetit
+-https://codepen.io/boub229/pen/PoWGeYG
+-https://codepen.io/boub229/pen/gOgwzYM
+-https://codepen.io/boub229/pen/wvgzmZg
