@@ -19,7 +19,7 @@ const swiper = new Swiper('.swiper-container', {
     })
     .from(animation, {
       x: '200%',
-      duration: 2, 
+      duration: 1.5, 
     }, '<');
    
   });
