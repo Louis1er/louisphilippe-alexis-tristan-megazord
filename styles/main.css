@@ -136,6 +136,7 @@ h2{
 .modal-body{
     background-color:black;
     border:var(--primary-alt) 2px solid;
+    font-size: 1.5vw;
 }
 
 .img-modal{
@@ -145,4 +146,14 @@ h2{
 .modal-header{
     background-color:black;
     border:var(--primary-alt) 2px solid;
+}
+.question {
+    display: none;
+  }
+  
+  .is-visible {
+    display: block;
+  }
+.body-quiz{
+    padding: 30px;
 }
