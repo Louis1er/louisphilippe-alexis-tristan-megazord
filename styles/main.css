@@ -164,27 +164,70 @@ h2{
     left: 35%;
     z-index:5;
     margin-left:auto;
-    
+    opacity: 0;
   }
   .x{
     position: absolute;
     width: 200px; 
     left:28%;
-    
-    
-    
+    opacity: 0;
   }
-  .txt{
+  .txt-bad{
     position: absolute;
     text-align: center;
     top:235px;
     left:85px;
     color: white;
     font-size: 2vh;
-    
+    opacity: 0;
   }
 
-  
   .body-quiz{
       height:300px;
+  }
+  .serj-content{
+    position: absolute;
+    width:125px;
+    left: 35%;
+    z-index:5;
+    margin-left:auto;
+    opacity: 0;
+  }
+  .checkmark{
+    position: absolute;
+    width: 200px; 
+    left:28%;
+    opacity: 0;
+  }
+  .txt-good{
+    position: absolute;
+    text-align: center;
+    top:235px;
+    left:165px;
+    color: white;
+    font-size: 2vh;
+    opacity: 0;
+  }
+  .serj-felicite{
+    position: absolute;
+    width:125px;
+    left: 35%;
+    z-index:5;
+    margin-left:auto;
+    opacity: 0;
+  }
+  .toxic{
+    position: absolute;
+    width: 200px; 
+    left:28%;
+    opacity: 0;
+  }
+  .txt-fini{
+    position: absolute;
+    text-align: center;
+    top:235px;
+    left:165px;
+    color: white;
+    font-size: 2vh;
+    opacity: 0;
   }
