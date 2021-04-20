@@ -184,11 +184,11 @@ class Question {
             this.mauvaiseReponse();
             if (this.score == -1) { this.score = 0 }
           }
-          if (this.index < this.question.length -1) {
+          if (this.index < this.question.length - 1) {
             this.index++;
             this.setVisible(this.index);
           }
-          else{
+          else {
             this.quizTerminer()
             this.index
           }
