@@ -190,6 +190,8 @@ class Question {
           }
           else{
             this.quizTerminer()
+            radio.classList.remove("quiz-mauvais")
+            radio.classList.remove("quiz-bon")
             this.index
           }
         }
