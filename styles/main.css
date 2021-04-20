@@ -157,3 +157,34 @@ h2{
 .body-quiz{
     padding: 30px;
 }
+
+.serj{
+    position: absolute;
+    width:125px;
+    left: 35%;
+    z-index:5;
+    margin-left:auto;
+    
+  }
+  .x{
+    position: absolute;
+    width: 200px; 
+    left:28%;
+    
+    
+    
+  }
+  .txt{
+    position: absolute;
+    text-align: center;
+    top:235px;
+    left:85px;
+    color: white;
+    font-size: 2vh;
+    
+  }
+
+  
+  .body-quiz{
+      height:300px;
+  }

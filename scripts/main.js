@@ -159,21 +159,6 @@ let question = [
         this.div.appendChild(this.br);
       }
   
-      if ("o4" in A) {
-        
-        let radio4 = document.createElement("input");
-        radio4.setAttribute("type", "radio");
-        radio4.setAttribute("name", "question" + value);
-        radio4.setAttribute("value", "4");
-        this.div.appendChild(radio4);
-  
-        let label4 = document.createElement("label");
-        label4.innerText = A.o4;
-        this.div.appendChild(label4);
-  
-        this.br = document.createElement("br");
-        this.div.appendChild(this.br);
-      }
     }
     
     setVisible(nombre) {
@@ -212,3 +197,38 @@ let question = [
   }
   
    new Question(question);
+
+
+   const play = document.querySelector('.btn');
+var end = 'fini'
+
+play.addEventListener('click', () => {
+  gsap.from('.x',
+    { scale: 0, duration: 1, rotate: 360,}      
+  );
+  gsap.to('.x', 
+    { opacity: 1}      
+  );
+  gsap.to('.x',
+    { opacity: 0, delay:3}
+  );
+  gsap.from('.serj',
+    { scale: 0, delay: 0.5, rotate: 360,}    
+  );
+  gsap.to('.serj', 
+    { opacity: 1}      
+  );
+  gsap.to('.serj',
+    { opacity: 0, delay:3}
+  );
+  gsap.from('.txt',
+    { scale: 0, delay: 0.8, ease:"bounce", onComplete: () => console.log("fini")}
+  );
+  gsap.to('.txt', 
+    { opacity: 1, }      
+  );
+  gsap.to('.txt',
+    { opacity: 0, delay:3}
+  );
+ 
+});
