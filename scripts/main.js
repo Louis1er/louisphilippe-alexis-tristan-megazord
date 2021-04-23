@@ -1,4 +1,4 @@
-let question = [
+this.question = [
   {
     q: "L’album Toxicity de System of a Down a vendu combien de copies?",
     o1: '10 million',
@@ -83,7 +83,8 @@ let question = [
 var quizBody = document.querySelector(".body-quiz");
 var bonQuiz = document.querySelector(".quiz-bon");
 var mauvaisQuiz = document.querySelector(".quiz-mauvais");
-var finiQuiz = document.querySelector(".quiz-fini")
+var finiQuiz = document.querySelector(".quiz-fini");
+
 
 class Question {
 
@@ -184,15 +185,24 @@ class Question {
             this.mauvaiseReponse();
             if (this.score == -1) { this.score = 0 }
           }
-          if (this.index < this.question.length - 1) {
+          if (this.index <= this.question.length - 1) {
+            if(this.index == this.question.length - 1) {
+              this.div.classList.add("last");
+              this.div.innerText = 'Pointage:';
+              this.strong.innerText = this.score + '/' + this.question.length;
+              this.div.appendChild(this.br);
+              this.div.appendChild(this.strong);
+              this.quizTerminer()
+              bonQuiz.remove();
+              mauvaisQuiz.remove();
+            }
             this.index++;
             this.setVisible(this.index);
           }
           else {
             this.quizTerminer()
-            radio.classList.remove("quiz-mauvais")
-            radio.classList.remove("quiz-bon")
-            this.index
+            bonQuiz.remove();
+            mauvaisQuiz.remove();
           }
         }
       });
@@ -219,7 +229,7 @@ class Question {
       { opacity: 0, delay: 3 }
     );
     gsap.from('.txt-good',
-      { scale: 0, delay: 0.8, ease: "bounce", onComplete: () => console.log("fini") }
+      { scale: 0, delay: 0.8, ease: "bounce"}
     );
     gsap.to('.txt-good',
       { opacity: 1, }
@@ -250,7 +260,7 @@ class Question {
       { opacity: 0, delay: 3 }
     );
     gsap.from('.txt-bad',
-      { scale: 0, delay: 0.8, ease: "bounce", onComplete: () => console.log("fini") }
+      { scale: 0, delay: 0.8, ease: "bounce"}
     );
     gsap.to('.txt-bad',
       { opacity: 1, }
@@ -280,7 +290,7 @@ class Question {
       { opacity: 0, delay: 3, translateX: 360, scale: 0 }
     );
     gsap.from('.txt-fini',
-      { scale: 0, delay: 0.8, ease: "bounce", onComplete: () => console.log("fini") }
+      { scale: 0, delay: 0.8, ease: "bounce"}
     );
     gsap.to('.txt-fini',
       { opacity: 1, }
