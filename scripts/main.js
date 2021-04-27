@@ -1,84 +1,12 @@
-this.question = [
-  {
-    q: "L’album Toxicity de System of a Down a vendu combien de copies?",
-    o1: '10 million',
-    o2: '11 million',
-    o3: '12 million',
-    r: 3
-  },
-  {
-    q: 'Le nom du groupe vient d’un poème que Daron Malakian a nommé « Victims of a Down ».',
-    o1: "Vrai",
-    o2: "Faux",
-    r: 1
-  },
-  {
-    q: 'Les quatre membres du groupe sont tous de quelle origine?',
-    o1: 'Syriens',
-    o2: 'Arméniens',
-    o3: 'Libanais',
-    r: 2
-  },
-  {
-    q: 'System of a Down a joué leur chanson « Aerials » aux Grammys de 2003.',
-    o1: "Vrai",
-    o2: "Faux",
-    r: 2
-  },
-  {
-    q: 'Quand est-ce que le groupe a été formé?',
-    o1: '1991',
-    o2: '1994',
-    o3: '1999',
-    r: 2
-  },
-  {
-    q: 'L’affiche de leur premier album est une affiche de la deuxième guerre mondiale.',
-    o1: "Vrai",
-    o2: "Faux",
-    r: 1
-  },
-  {
-    q: 'Combien d’albums est-ce que System of a Down a-t-il fait?',
-    o1: '4',
-    o2: '5',
-    o3: '6',
-    r: 2
-  },
-  {
-    q: 'L’album Toxicity a été certifié platine en 8 semaines.',
-    o1: "Vrai",
-    o2: "Faux",
-    r: 2
-  },
-  {
-    q: 'Qui est le chanteur principal de System of a Down?',
-    o1: "Daron Malakian",
-    o2: "Shavo Odadjian",
-    o3: 'Serj Tankian',
-    r: 3
-  },
-  {
-    q: 'Leur chanson « Bounce » a été présenté dans un film d’animation Pixar.',
-    o1: "Vrai",
-    o2: "Faux",
-    r: 1
-  },
-  {
-    q: 'Combien de nomination Grammy le groupe a-t-il eu?',
-    o1: "7",
-    o2: "3",
-    o3: "4",
-    r: 3
-  },
-  {
-    q: 'Le chanteur principal, Serj Tankian, était un vendeur de souliers et a eu une compagnie de logiciels avant d’écrire de la musique.',
-    o1: "Vrai",
-    o2: "Faux",
-    r: 1
-  },
+this.question = fetch('http://megazordsoad.com/json/')
+.then(function(response) {
+  response.json();
+ console.log(response) 
+})
 
-]
+.catch(function(error) {
+  console.log('Une erreur est survenue')
+})
 
 var quizBody = document.querySelector(".body-quiz");
 var bonQuiz = document.querySelector(".quiz-bon");
