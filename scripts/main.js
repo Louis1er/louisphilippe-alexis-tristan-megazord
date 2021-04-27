@@ -21,6 +21,7 @@ class Question {
     this.index = 0;
     this.score = 0;
     this.question = table;
+    console.log(table)
     this.question.forEach((question, value) => {
       this.html(question, value + 1);
     });
