@@ -1,10 +1,9 @@
 this.question = fetch('http://megazordsoad.com/json/')
 .then(function(response) {
   response.json();
- console.log(response) 
+  console.log(question); 
 })
-
-.catch(function(error) {
+.catch(function() {
   console.log('Une erreur est survenue')
 })
 
