@@ -1,7 +1,9 @@
-this.question = fetch('http://megazordsoad.com/json/')
+fetch('http://megazordsoad.com/json/')
 .then(function(response) {
-  response.json();
-  console.log(question); 
+  return response.json();
+})
+.then(function(question){
+  new Question(question);
 })
 .catch(function() {
   console.log('Une erreur est survenue')
@@ -228,7 +230,7 @@ class Question {
   }
 }
 
-new Question(question);
+
 
 
 const play = document.querySelector('.btn');
