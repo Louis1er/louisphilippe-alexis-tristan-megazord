@@ -1,4 +1,4 @@
-fetch('http://megazordsoad.com/json/')
+fetch('http://megazordsoad.com/public_html/soad-api/wp-json/wp/v2/posts')
 .then(function(response) {
   return response.json();
 })
