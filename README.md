@@ -23,3 +23,5 @@ Tristan Girard-Montpetit
 -https://codepen.io/boub229/pen/PoWGeYG
 -https://codepen.io/boub229/pen/gOgwzYM
 -https://codepen.io/boub229/pen/wvgzmZg
+
+http://megazordsoad.com/public_html/soad-api/wp-json/wp/v2/posts
