@@ -29,20 +29,22 @@ class Question {
     this.setVisible(this.index);
     this.reponse();
   }
-  html(A, value) {
+  
+  html(questionobj, value) {
 
     this.div = document.createElement("div");
     this.div.classList.add("question");
     quizBody.appendChild(this.div);
 
-    this.strong = document.createElement("strong");
-    this.strong.innerText = A.q;
+    this.strong = document.createElement("strong");    
+    this.strong.innerText = questionobj.acf.q;
+    
     this.div.appendChild(this.strong);
 
     this.br = document.createElement("br");
     this.div.appendChild(this.br);
 
-    if ("o1" in A) {
+    if ("o1" in questionobj.acf) {
 
       let radio1 = document.createElement("input");
       radio1.setAttribute("type", "radio");
@@ -51,14 +53,14 @@ class Question {
       this.div.appendChild(radio1);
 
       let label1 = document.createElement("label");
-      label1.innerText = A.o1;
+      label1.innerText = questionobj.acf.o1;
       this.div.appendChild(label1);
 
       this.br = document.createElement("br");
       this.div.appendChild(this.br);
     }
 
-    if ("o2" in A) {
+    if ("o2" in questionobj.acf) {
 
       let radio2 = document.createElement("input");
       radio2.setAttribute("type", "radio");
@@ -67,14 +69,14 @@ class Question {
       this.div.appendChild(radio2);
 
       let label2 = document.createElement("label");
-      label2.innerText = A.o2;
+      label2.innerText = questionobj.acf.o2;
       this.div.appendChild(label2);
 
       this.br = document.createElement("br");
       this.div.appendChild(this.br);
     }
 
-    if ("o3" in A) {
+    if (questionobj.acf.o3!=="") {
 
       let radio3 = document.createElement("input");
       radio3.setAttribute("type", "radio");
@@ -83,7 +85,7 @@ class Question {
       this.div.appendChild(radio3);
 
       let label3 = document.createElement("label");
-      label3.innerText = A.o3;
+      label3.innerText = questionobj.acf.o3;
       this.div.appendChild(label3);
 
       this.br = document.createElement("br");
@@ -109,7 +111,7 @@ class Question {
       radio.addEventListener("change", () => {
         console.log(this.index);
         if (radio.checked) {
-          if (radio.value == this.question[this.index].r) {
+          if (radio.value == this.question[this.index].acf.r) {
             this.bonneReponse();
           } else {
             this.mauvaiseReponse();
