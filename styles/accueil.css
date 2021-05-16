@@ -1,10 +1,112 @@
+*{
+    box-sizing: border-box;
+  }
 body{
+    overflow-x:hidden ;
     background-color: var(--bg);
     color: var(--text);
-    font-family: var(--font1);
-    
+    font-family: var(--font1);    
 }
-
+@media screen and (orientation: landscape) {
+    .header-accueil{
+        position: relative;
+        margin: 0 auto;
+        width:100%;
+        height: 56.25vw;
+    }
+} 
+.header-accueil{
+    position: relative;
+    width:100%;
+    height:100vh;
+}
+.contraste{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background-color: var(--bg);
+    opacity:40%;
+}
+.container-accueil{
+    position: relative;
+    height:100%;
+    text-align: center;    
+}
+.row{
+    position: relative;
+    height:100%;   
+}
+.picture-accueil{
+    position: absolute;
+    background-color: var(--bg);
+    width: 100%;
+    height:100%;
+    display: block;
+}
+.soad1{
+    object-fit: cover;
+    object-position: 10% 10%;
+    width: 100%;
+    height:100%;
+}
 p {
     font-family: var(--font2);
 }
+.card-index{
+    margin-top:10px;
+    overflow: hidden;
+}
+.card-body{
+    font-family: var(--font1);
+    font-size: 5vh;
+}
+
+.h1-index{
+    font-size: 10vw;
+}
+
+.h1-membres{
+    font-size: 7vw;
+}
+.index .swiper-container{
+    width:100%;
+}
+.index .swiper-slide{
+    position:relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%; 
+}
+
+.index .swiper-slide img{
+    width: 100%;
+    object-fit: cover;
+}
+.index .swiper-pagination-bullet-active {
+    background-color: #c50a0a !important;
+    opacity: 1;
+}
+.index .swiper-pagination-bullet{
+    background-color: #CFBC8A;
+    opacity:1;
+}
+.index .anim{
+  position: sticky;
+  top: 50%;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  background-image: url('https://i.imgur.com/Cu6RWev.png');
+  background-size: cover;
+  animation: idle 1s steps(23) infinite;
+}
+.index.scrollup .anim{
+    background-image: url('https://i.imgur.com/XzKbq7t.png');
+}
+.index.scrolldown .anim{
+    background-image: url('https://i.imgur.com/etDu4je.png');
+}
+@keyframes idle{
+    0%{background-position: 0 0;}
+    100%{background-position: 0 100%;}
+  }

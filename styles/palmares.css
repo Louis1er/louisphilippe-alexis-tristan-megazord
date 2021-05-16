@@ -1,0 +1,167 @@
+*{
+    box-sizing: border-box;
+}
+
+
+
+.header-palma{
+    position: relative;
+    width:100%;
+    height:100vh;
+}
+
+@media screen and (orientation: landscape) {
+    .header-palma{
+        position: relative;
+        width:100%;
+        height: 56.25vw;
+        margin: 0 auto;
+    }
+}    
+
+.live1{
+    object-fit: cover;
+    width: 100%;
+    height:100%;
+    object-position: 50% 50%;
+    
+}
+
+
+.container-palma{
+    position: relative;
+    height:100%;
+    margin-right: 20px;
+    
+    
+    
+}
+
+.row{
+    position: relative;
+    height:100%;
+    
+}
+
+.picture-palma{
+    position: absolute;
+    background-color: var(--bg);
+    width: 100%;
+    height:100%;
+    
+}
+
+.opacité-palma{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    opacity: 40%;
+    background-image: linear-gradient(#0000, rgb(255, 0, 0));
+}
+
+
+.h1-palma{
+    font-size: 13vw;
+}
+
+p{
+    font-size:3vh;
+}
+
+.button-palma{
+    
+    font-size:2.5vh;
+    background-color: var(--primary-alt);
+    font-family: var(--font2);
+    color: white;
+    margin-bottom: 50px;
+}
+
+@media (prefers-color-scheme: dark) { 
+    .palma1{
+      display: none;
+    }
+ 
+    .palmanb{
+      display: block;
+    }
+ }
+   
+ .dark{
+     display: none;
+ }
+.palma .card{
+    color: black;
+    margin: 10px;
+}
+
+
+.card-body{
+    font-family: var(--font1);
+    font-size: 5vh;  
+}
+
+.palma li{
+    font-family: var(--font2);
+    font-size: 4vh;
+    margin-left:4%;
+    
+}
+
+.card-header{
+    font-size: 10vh;
+}
+
+.palma .img-fluid{
+    
+    transition-duration: 0.3s;
+    transform: scale(1);
+}
+
+.palma .card:hover .img-fluid{
+    transform: scale(1.02);
+}
+.palma .swiper-container{
+   
+ height: 300px;
+}
+.palma .swiper-slide{
+    position:relative;
+   width: 100%;
+    height: 300px;
+    padding-bottom: 56.25%; 
+}
+.palma .swiper-slide img{
+    width: 100%;
+    object-fit: cover;
+}
+.swiper-button-next{
+    color: #c50a0a !important;
+    opacity: 1;
+}
+
+.swiper-button-prev{
+    color: #c50a0a !important;
+    opacity: 1;
+}
+.palma .anim{
+    position: sticky;
+    top: 50%;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-image: url('https://i.imgur.com/FE8apPH.png');
+    background-size: cover;
+    animation: idle 1s steps(23) infinite;
+  }
+  .palma.scrollup .anim{
+      background-image: url('https://i.imgur.com/zxN77qp.png');
+      transform: rotate(270deg);
+  }
+  .palma.scrolldown .anim{
+      background-image: url('https://i.imgur.com/yActAnb.png');
+  }
+  @keyframes idle{
+      0%{background-position: 0 0;}
+      100%{background-position: 0 100%;}
+    }

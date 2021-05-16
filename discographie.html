@@ -5,12 +5,355 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="styles/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Discographie</title>
 </head>
-<body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous" src="scripts/main.js" ></script>
-    <script> src="scripts/discographie.js" </script>
+
+<body class="disco">
+
+    <header class="header-disco">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img/split_album1.jpg"></div>
+              <div class="swiper-slide"><img src="img/split_album2.jpg"> </div>
+              <div class="swiper-slide"><img src="img/split_album3.jpg"></div>
+            <div class="swiper-slide"><img src="img/split_album4.jpg"></div>
+            <div class="swiper-slide"><img src="img/split_album5.jpg"></div>
+            
+          </div>
+          </div>
+        
+        <div class="opacité"></div>
+
+        <div class="disco-container">
+            <div class="row"> 
+                <div class="col-sm-8 align-self-end">
+                    <h1 class="h1-disco">Discographie</h1>
+
+                    <p class="p-disco">System of a Down a enregistré 5 albums studio répartis entre 1998 et 2005.</p>
+
+                    <a href="#main"><button>En savoir plus</button></a>
+                    
+                
+                    
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-dark navbar-expand-sm sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">SOAD</a>
+           
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Affichage/masquage de la navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      
+      <div id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link ">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a href="discographie.html" class="nav-link active">Discographie</a>
+          </li>
+          <li class="nav-item">
+            <a href="palmares.html" class="nav-link">Palmarès</a>
+          </li>
+          <li class="nav-item">
+            <span class="nav-link" data-bs-toggle="modal" data-bs-target="#quiz">Quiz</span>
+        </li>
+          </ul>
+      </div>
+  </div>
+
+</nav>
+
+<main id="main" class="container-fluid">
+    <div class="row">
+        
+
+        <div class="col-md-9">   
+    <section class="section-li">
+        
+        <div class= "row"> 
+            <div class="col-xs-12 col-sm-5 order-sm-1 order-xs-1">
+            <ol class="ol">System of a Down
+                <li>Suite-Pee</li>
+                <li>Known</li>
+                <li>Sugar</li>
+                <li>Suggestions</li>
+                <li>Spiders</li>
+                <li>DDevil</li>
+                <li>Soil</li>
+                <li>War?</li>
+                <li>Mind</li>
+                <li>Peephole</li>
+                <li>CUBErt</li>
+                <li>Darts</li>
+                <li>P.L.U.C.K.</li>
+            </ol>
+            <button class="button"> <a href="https://fr.wikipedia.org/wiki/System_of_a_Down_(album)"> En savoir plus </a></button>
+            </div>
+
+            <div class="col-xs-12 col-sm-7 order-sm-2 order-xs-2">
+                <picture class="picture-split">
+                    
+                    <img class="album1 anim_scroll" src="img/split_album1.jpg">
+                </picture>
+            </div>
+            </div>
+    </section>
+
+    <section class="section-li">
+        <div class= "row"> 
+            <div class="col-xs-12 col-sm-5 order-sm-2 order-xs-2">
+            <ol class="ol">Toxicity
+                <li>Prison Song</li>
+                <li>Needles</li>
+                <li>Deer Dance</li>
+                <li>Jet Pilot</li>
+                <li>X</li>
+                <li>Chop Suey!</li>
+                <li>Bounce</li>
+                <li>Forest</li>
+                <li>ATWA</li>
+                <li>Science</li>
+                <li>Shimmy</li>
+                <li>Toxicity</li>
+                <li>Psycho</li>
+                <li>Aerials</li>
+                <li>Arto</li>
+            </ol>
+            <button class="button"> <a href="https://fr.wikipedia.org/wiki/Toxicity_(album)"> En savoir plus </a></button>
+            </div>
+
+            <div class="col-xs-12 col-sm-7 order-sm-1 order-xs-1">
+                <picture class="picture-split">
+                    
+                    <img class="album2 anim_scroll_left" src="img/split_album2.jpg">
+                </picture>
+            </div>
+            </div>
+    </section>
+
+    <section class="section-li">
+        <div class= "row"> 
+            <div class="col-xs-12 col-sm-5 order-sm-1 order-xs-1">
+            <ol class="ol">Steal this Album!
+                <li>Chic 'n' Stu</li>
+                <li>Innervision</li>
+                <li>Bubbles</li>
+                <li>Boom!</li>
+                <li>Nüguns</li>
+                <li>A.D.D. (American Dream Denial)</li>
+                <li>Mr. Jack</li>
+                <li>I-E-A-I-A-I-O</li>
+                <li>36</li>
+                <li>Pictures</li>
+                <li>Highway Song</li>
+                <li>F**k the System</li>
+                <li>Ego Brain</li>
+                <li>Thetawaves</li>
+                <li>Roulette</li>
+                <li>Streamline</li>
+            </ol>
+            <button class="button"> <a href="https://fr.wikipedia.org/wiki/Steal_This_Album!"> En savoir plus </a></button>
+            </div>
+
+            <div class="col-xs-12 col-sm-7 order-sm-2 order-xs-2">
+                <picture class="picture-split">
+                    
+                    <img class="album1 anim_scroll" src="img/split_album3.jpg">
+                </picture>
+            </div>
+            </div>
+    </section>
+
+    <section class="section-li">
+        <div class= "row"> 
+            <div class="col-xs-12 col-sm-5 order-sm-2 order-xs-2">
+            <ol class="ol">Mezmerize
+                <li>Soldier Side - Intro</li>
+                <li>B.Y.O.B.</li>
+                <li>Revenga</li>
+                <li>Cigaro</li>
+                <li>Radio/Video</li>
+                <li>This Cocaine Makes Me Feel Like I'm On This Song</li>
+                <li>Violent Pornography</li>
+                <li>Question!</li>
+                <li>Sad Statue</li>
+                <li>Old School Hollywood</li>
+                <li>Lost in Hollywood</li>
+            </ol>
+            <button class="button"> <a href="https://fr.wikipedia.org/wiki/Mezmerize"> En savoir plus </a></button>
+            </div>
+
+            <div class="col-xs-12 col-sm-7 order-sm-1 order-xs-1">
+                <picture class="picture-split">
+                    
+                    <img class="album2 anim_scroll_left" src="img/split_album4.jpg">
+                </picture>
+            </div>
+            </div>
+    </section>
+
+    <section class="section-li">
+        <div class= "row"> 
+            <div class="col-xs-12 col-sm-5 order-sm-1 order-xs-1">
+            <ol class="ol">Hypnotize
+                <li>Attack</li>
+                <li>Dreaming</li>
+                <li>Kill Rock 'N Roll</li>
+                <li>Hypnotize</li>
+                <li>Stealing Society</li>
+                <li>Tentative</li>
+                <li>U-fig</li>
+                <li>Holy Mountains</li>
+                <li>Vicinity of Obscenity</li>
+                <li>She's Like Heroin</li>
+                <li>Lonely Day</li>
+                <li>Soldier Side</li>
+            </ol>
+            <button class="button"> <a href="https://fr.wikipedia.org/wiki/Hypnotize_(album_de_System_of_a_Down)"> En savoir plus </a></button>
+            </div>
+ 
+            <div class="col-xs-12 col-sm-7 order-sm-2 order-xs-2">
+                <picture class="picture-split">
+                    
+                    <img class="album1 anim_scroll" src="img/split_album5.jpg">
+                </picture>
+            </div>
+            </div>
+            
+        
+    </section>
+    <section class="section-li">
+        <h1 class="titre-video">Vidéo</h1>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CSvFpBOe8eY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </section>
+
+</div>
+    <div class="col-md-3">
+        <img class="anim">
+</div>
+
+
+
+</div>
+
+
+
+</main>
+
+    <footer>
+        <div class="container-fluid">
+            <div class= "row">
+                <div class="col-sm-6 col-xs-12 text-center text-sm-start ">
+                    <p class="p-footer" data-bs-toggle="modal" data-bs-target="#LP">Louis-Philippe Gravel</p>
+                    <p class="p-footer" data-bs-toggle="modal" data-bs-target="#alexis">Alexis Lacasse</p>
+                    <p class="p-footer" data-bs-toggle="modal" data-bs-target="#tristan">Tristan Girard-Montpetit</p>
+                </div>
+                    <div class="col-sm-6 col-xs-12 text-center text-sm-start">
+                    <a class="a-footer" href="https://github.com/Louis1er/louisphilippe-alexis-tristan-megazord">https://github.com/Louis1er/louisphilippe-alexis-tristan-megazord</a>
+                    <p class="p-footer">@2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<div id="LP" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"> 
+            <div class="modal-header">
+                <h2 class="modal-title">Louis-Philippe Gravel</h2>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-modal" src="img/lp.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="alexis" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"> 
+            <div class="modal-header">
+                <h2 class="modal-title">Alexis Lacasse</h2>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-modal" src="img/alexis.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="tristan" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content"> 
+            <div class="modal-header">
+                <h2 class="modal-title">Tristan Girard-Montpetit</h2>
+                <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+            </div>
+            <div class="modal-body">
+                <img class="img-modal" src="img/tristan.jpg">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal-quiz">
+    <div id="quiz" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <h2 class="modal-title">Quiz</h2>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Fermer la fenêtre"></button>
+                </div>
+                <div class="modal-body body-quiz">
+                    <div class="animation-modal">
+                        <div class="quiz-bon">
+                            <img class="serj-content" src="https://i.imgur.com/tteT19A.png">
+                            <a href="https://imgur.com/UTy6snM"><img class="checkmark" src="https://i.imgur.com/UTy6snM.png" title="source: imgur.com" /></a>
+                            <p class="txt-good">Bonne réponse,</br>
+                            Serj est content!</p>
+                        </div>
+                        <div class="quiz-mauvais"> <img class="serj" src="https://i.imgur.com/syDiHVH.png">
+  
+                            <a href="https://imgur.com/pv0pabU "><img class="x" src="https://i.imgur.com/pv0pabU.png" title="source: imgur.com" /></a>
+                            <p class="txt-bad">Mauvaise réponse,</br>
+                                Serj n'est pas content </p>
+                                  
+                                
+                                  
+                                </div>        
+                        <div class="quiz-fini">
+                            <img class="serj-felicite" src="https://i.imgur.com/qF8xu1w.png">
+                            <a href="https://imgur.com/UTy6snM"><img class="toxic" src="https://i.imgur.com/p1Fs6dp.png" title="source: imgur.com" /></a>
+                                <p class="txt-fini">Bien jouer,</br>
+                                    Serj te remercie!</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"  ></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js" ></script>
+<script src="scripts/main.js"></script>
+<script src="scripts/discographie.js" ></script>
 </body>
 </html>
 

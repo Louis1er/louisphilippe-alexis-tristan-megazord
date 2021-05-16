@@ -5,7 +5,229 @@
 @import url("discographie.css");
 @import url("palmares.css");
 
+footer{
+    
+    background-color: rgb(56, 2, 2);
+    margin-top: 20px;
+    padding:20px;
+    
+}
+
+@media (max-width: 576px) {
+    footer{
+        text-align: center;
+        
+    }
+}    
+
+.footer-container{
+    position: relative;
+    height:100%;
+    width:100%;
+}
+
+.footer-row{
+    position: relative;
+    height:100%;
+    width:100%;
+    
+}
 
 
+.a-footer { 
+    color: inherit; 
+    font-family: var(--font2);
+    text-decoration: none;
+    font-size:2.2vh;
+    width:100%;
+}
+
+.p-footer { 
+    font-family: var(--font2);
+    font-size:2.2vh;
+    width:100%;
+    cursor:pointer;
+}
 
 
+.navbar-brand{
+    font-family: var(--font1);
+    font-size:3.2vw;
+    padding-left:75px;
+}
+
+.nav-link{
+    font-family: var(--font2);
+    font-size:2vw;
+    color: white;
+}
+
+nav{
+    background-color: rgb(56, 2, 2);
+    
+}
+
+@media (max-width: 576px) {
+    .navbar-brand{
+        background-color: rgb(56, 2, 2);
+        font-size:5vw;
+        padding-left:0px;
+    }
+} 
+
+
+@media (max-width: 576px) {
+    .nav-link{
+        
+        font-size:2.4vw;
+        
+    }
+} 
+
+@media (max-width: 768px) {
+    .nav-link{
+      
+        font-size:2.3vw;
+        
+    }
+} 
+
+.anim{
+    position: relative;
+    width: 100%;
+    height: auto;
+    left:0;
+}
+
+@media (max-width: 768px) {
+    .anim{
+      
+        display:none;
+        
+    }
+} 
+
+iframe{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+     
+    
+}
+
+.video{
+    position:relative;
+    width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; 
+}
+
+h1{
+    font-size: 3vw;
+}
+
+h2{
+    color:var(--primary);
+    background-color: black;
+}
+
+.modal-body{
+    background-color:black;
+    border:var(--primary-alt) 2px solid;
+    font-size: 1.5vw;
+}
+
+.img-modal{
+    width: 465px;
+}
+
+.modal-header{
+    background-color:black;
+    border:var(--primary-alt) 2px solid;
+}
+.question {
+    display: none;
+  }
+  
+  .is-visible {
+    display: block;
+  }
+.body-quiz{
+    padding: 30px;
+}
+
+.serj{
+    position: absolute;
+    width:125px;
+    left: 35%;
+    z-index:5;
+    margin-left:auto;
+    opacity: 0;
+  }
+  .x{
+    position: absolute;
+    width: 200px; 
+    left:28%;
+    opacity: 0;
+  }
+  .txt-bad{
+    position: absolute;
+    text-align: center;
+    top:235px;
+    left:145px;
+    color: white;
+    font-size: 2vh;
+    opacity: 0;
+  }
+
+  .body-quiz{
+      height:300px;
+  }
+  .serj-content{
+    position: absolute;
+    width:125px;
+    left: 35%;
+    z-index:5;
+    margin-left:auto;
+    opacity: 0;
+  }
+  .checkmark{
+    position: absolute;
+    width: 200px; 
+    left:28%;
+    opacity: 0;
+  }
+  .txt-good{
+    position: absolute;
+    text-align: center;
+    top:235px;
+    left:165px;
+    color: white;
+    font-size: 2vh;
+    opacity: 0;
+  }
+  .serj-felicite{
+    position: absolute;
+    width:175px;
+    left: 35%;
+    z-index:5;
+    margin-left:auto;
+    opacity: 0;
+  }
+  .toxic{
+    position: absolute;
+    width: 200px; 
+    left:28%;
+    opacity: 0;
+  }
+  .txt-fini{
+    position: absolute;
+    text-align: center;
+    top:235px;
+    left:165px;
+    color: white;
+    font-size: 2vh;
+    opacity: 0;
+  }
